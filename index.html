@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Celebrare</title>
+  <!-- font awesome (cdn) links -->
+  <script src="https://kit.fontawesome.com/6c44ef3a89.js" crossorigin="anonymous"></script>
+  <!-- just below link we uses for styling web-page by using css-link taken from bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- just below three links change behaviour of website /we uses js links -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+  <!--  google font just below two links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<body>
+
+  <section id="title">
+   <!-- container :- we have two -container and container-fluid  -->
+   <div class="container-fluid">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+     <a class="navbar-brand" href="">Celebrare</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav ml-auto">
+         <li class="nav-item">
+             <a class="nav-link" href="#footer">Wedding Cards</a>         <!--in href we contain ids to access that perticular id(so that whenever we touch contact/pricing etc  -->
+                                                                            <!--   we just scroll to that section automatically)  -->
+         </li>
+         <li class="nav-item">
+             <a class="nav-link" href="#pricing">Birthday Cards</a>
+         </li>
+         <li class="nav-item">
+             <a class="nav-link" href="#cta">Feeling Cards</a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#cta1">Annivarsary Cards</a>
+      </li>
+     </ul>
+  </div>
+ </nav>
+
+    <!-- Title -->
+
+    <div class="row">
+        <div class="col-lg-6">
+      <h1>Digital Cards details</h1>
+      <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i>Try this Cards</button>    <!-- fab-font awesome button   /<>/   either we can use class in styles.css that mentioned also we creat custom class   -->
+      <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Try this Cards</button>    <!-- i/span we can use anyone of them  -->
+    </div>
+    <div class="col-lg-6">
+      <img class="title-image" src="Assets/Logo.png" alt="iphone-mockup">
+    </div>
+  </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+
+<div class="container-fluid">
+   <div class="row">
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-check-circle fa-4x"></i>    <!--Just to make colourful our font awesome icons i've created a custum class-icon for each -->
+    <h3>Easy to use.</h3>
+    <p>So easy to use our user-friendly platform</p>
+     </div>
+
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-bullseye fa-4x"></i>
+    <h3>Elite Clientele</h3>
+    <p>We have variety of Cards, the greatest design.</p>
+      </div>
+
+   <div class="feature-box col-lg-4">
+     <i class="icon fas fa-heart fa-4x"></i>
+    <h3>Guaranteed to work.</h3>
+    <p>Find the perfect match(Cards) for your true love or your money back.</p>
+  </div>
+
+  </div>
+</div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">   <!-- Read more if you forget concept of carousel(slidng feature) from bootstrap  -->
+      <!-- in above line we can also use data-bs-interval="1000"(basically it incs speed of slides movement default speed 500 but uses this attr in animation) also hover is by default off in carousel -->
+   <div class="carousel-inner">
+
+     <div class="carousel-item active container-fluid">
+       <h2 class="medium-heading">“I know all eyes are supposed to be on the bride, but I just couldn't take mine off you.”</h2>
+       <img class="testimonials-img" src="Assets/Page1.jpg" alt="dog-profile">
+       <em class="cl">wedding</em>
+     </div>
+
+     <div class="carousel-item container-fluid">
+       <h2 class="testimonial-text"> “Priceless moments in life are meant to be celebrated in the presence of the ones you love.”</h2>
+      <img class="testimonials-img" src="Assets/Page2.jpg" alt="lady-profile">
+      <em class="cl">special time</em>
+     </div>
+
+     <div class="carousel-item container-fluid">
+      <h2 class="testimonial-text">“Now get out there and shake what your mamma gave you!”</h2>
+     <img class="testimonials-img" src="Assets/Page3.jpg" alt="lady-profile">
+     <em class="cl">last but not the least</em>
+    </div>
+
+   </div>
+     <!-- button on slides  -->
+     <button class="carousel-control-prev" type="button" data-target="#testimonial-carousel" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-target="#testimonial-carousel" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+ </div>
+  </section>
+
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2 class="medium-heading">Some available features</h2>
+    <p>Simple and affordable price plans for your Cards</p>
+
+ <!--  <div class="card-deck">     -->        <!-- You can laern more from bootstrap website we are not using "card-deck" bcoz dont follow Grid-system -->
+
+     <div class="row">          <!-- Here we follow Grid-system  -->
+    <div class="pricing-column col-lg-4 col-md-6">    <!-- 12/3=  4    -->
+     <div class="card">
+       <div class="card-header">
+               <h3>Create your cards in just 5 min</h3>
+             </div>
+      <div class="card-body">
+            <h2 class="medium-heading">Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
+           </div>
+    </div>
+  </div>
+
+    <div class="pricing-column col-lg-4 col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>Customize the Text
+              with "Edit this Page" Option</h3>
+              </div>
+       <div class="card-body">
+         <h2 class="medium-heading">$49 / mo</h2>
+         <p>Unlimited Matches</p>
+         <p>Unlimited App Usage</p>
+         <button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
+            </div>
+     </div>
+</div>
+
+    <div class="pricing-column col-lg-4 col-md-12">   <!-- even we dont mention col-md-12 it will by default covered 100% space  -->
+     <div class="card">
+         <div class="card-header">
+               <h3>Editing is available
+                after purchase also</h3>
+               </div>
+        <div class="card-body">
+          <h2 class="medium-heading">$99 / mo</h2>
+          <p>Pirority Listing</p>
+          <p>Unlimited Matches</p>
+          <p>Unlimited App Usage</p>
+          <button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
+             </div>
+      </div>
+  </div>
+</div>
+  </section>
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+<div class="container-fluid">
+    <h3 class="cta-heading">Find a perfect match to represent your true love</h3>
+    <button class="btn btn-light down-btn" type="button"><i class="fab fa-apple"></i>Try this Card</button>  <!-- fab-font awesome button -->
+    <button class="btn btn-dark down-btn" type="button"><i class="fab fa-google-play"></i>Try this Card</button>  <!-- i/span we can use anyone of them  -->
+  </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <div class="container-fluid">
+     <i class="social-icons fab fa-twitter"></i>
+     <i class="social-icons fab fa-github-alt"></i>
+    <i class="social-icons fab fa-instagram"></i>
+    <p>© Celebrare 2022</p>
+</div>
+  </footer>
+
+</body>
+
+</html>
